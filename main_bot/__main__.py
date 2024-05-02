@@ -8,7 +8,8 @@ if __name__ == "__main__":
     token = _token,
     prefix="!",
     default_enabled_guilds=[GUILD_ID, 1152810245098307677],
-    intents = hikari.Intents.ALL
+    intents = hikari.Intents.ALL,
+    ignore_bots=True,
     )
 
     # bot.load_extensions('extensions.example') # specific extensions available

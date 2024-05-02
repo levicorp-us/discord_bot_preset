@@ -11,7 +11,6 @@ def prob_generator():
 
 @plugin.listener(hikari.GuildMessageCreateEvent)
 async def probability(event : hikari.GuildMessageCreateEvent):
-    # parse input
     channel_id = event.channel_id
     msg = event.content
     if msg [-2:]=="확률" and msg[0] == "!":
